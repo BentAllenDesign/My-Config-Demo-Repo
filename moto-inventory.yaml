@@ -9,6 +9,6 @@ management:
         include: *
 
 
-vinLookupServiceName: random-greeting-service
+vinLookupServiceName: vin-lookup
 serviceProtocol: http://
-servicePath: /greeting
+servicePath: /vehicle/${vin}
