@@ -10,6 +10,9 @@ management:
         include: "*"
 
 spring:
+  autoconfigure:
+    exclude:
+    - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
   datasource:
     url: jdbc:mysql://localhost:3306/moto_inventory?useSSL=false
     username: root
